@@ -39,7 +39,7 @@ The bounding region of a trapezoid is the smallest rectangle that encloses the e
 
 ### Prerequisites
 
-* [Visual Studio](https://visualstudio.microsoft.com/ru/) installed with Net6.0 Support
+* [Visual Studio](https://visualstudio.microsoft.com/) installed with Net6.0 Support
 
 ### Installation
 

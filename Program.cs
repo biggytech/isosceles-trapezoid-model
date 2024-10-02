@@ -185,7 +185,9 @@ class IsoscelesTrapezoid : Point, IIsoscelesTrapezoid
     {
         get
         {
-            return Math.Sqrt(Math.Pow((c - b) / 2, 2) + Math.Pow(h, 2));
+            double bigger_side = c > b ? c : b;
+            double smaller_side = c > b ? b : c;
+            return Math.Sqrt(Math.Pow((bigger_side - smaller_side) / 2, 2) + Math.Pow(h, 2));
         }
     }
     public double perimeter // периметр
@@ -206,7 +208,8 @@ class IsoscelesTrapezoid : Point, IIsoscelesTrapezoid
     {
         get
         {
-            return (location.x, location.y, location.x + c, location.y + h);
+            double bigger_side = c > b ? c : b;
+            return (location.x, location.y, location.x + bigger_side, location.y + h);
         }
     }
 
